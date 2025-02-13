@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-3">
+    <button id="play-music">PEHLE PLAY KAR❗❗❗❗</button>
+    <audio id="bg-music" src="assets/co2.mp3" loop></audio>
+
+    <div class="final-message">
+        <h1>hey, just wanted to let you know,</h1>
+	<h3>i feel safe to be my authentic self with you and that's one gift from you that'll i'll forever hold close to my heart, </h3>
+	<h3>you are my rock, bsf, everyyyythingggggg
+    </div>
+    <script>
+        document.getElementById("play-music").addEventListener("click", function () {
+            let music = document.getElementById("bg-music");
+
+            if (music.paused) {
+                music.muted = false; // Unmute the audio
+                music.volume = 1.0;  // Set volume to full
+                music.play()
+                    .then(() => console.log("✅ Music started playing!"))
+                    .catch(error => console.error("🚨 Error playing:", error));
+                this.textContent = "Pause Music"; // Change button text
+            } else {
+                music.pause();
+                this.textContent = "Play Music"; // Toggle button text
+            }
+        });
+    </script>
+
+</body>
+</html>

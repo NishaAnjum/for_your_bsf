@@ -1,0 +1,166 @@
+body {
+    background-color: #ffb6c1; /* Light pink */
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.envelope {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.envelope:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    color:hotpink;
+    font-family: 'Times New Roman', serif;
+}
+
+.character {
+    width: 150px;
+    position: absolute;
+    transition: left 0.5s ease, right 0.5s ease;
+}
+
+char1 {
+    left: 5%;
+}
+
+char2 {
+    right: 5%;
+}
+
+#move-btn {
+    background-color: hotpink;
+    color: white; /* Ensures text is readable */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+#move-btn:hover {
+    background-color: deeppink; /* Slightly darker pink on hover */
+}
+
+.envelope {
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: contain; /* Keeps aspect ratio */
+}
+.character {
+    width: 20vw;  /* Adjust width relative to viewport width */
+    max-width: 200px; /* Prevent it from becoming too big */
+    height: auto;  /* Maintain aspect ratio */
+    position: absolute;
+    bottom: 10%;  /* Adjust positioning if needed */
+}
+.h3-message {
+    position: relative;
+    margin-top: -400px; /* Move it up */
+    text-align: center; /* Keep it centered */
+    font-size: 18px; /* Adjust font size if needed */
+    color: hotpink;
+}
+#yes-btn, #no-btn {
+    background-color: hotpink;
+    color: white; /* Ensures text is readable */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+#yes-btn:hover, #no-btn:hover {
+    background-color: deeppink; /* Slightly darker pink on hover */
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: pink; /* Your background color */
+    text-align: center;
+}
+
+#play-music {
+    background-color: hotpink;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space between button and text */
+   font-family: 'Times New Roman', serif;
+}
+
+#play-music:hover {
+    background-color: deeppink;
+}
+
+.final-message {
+    max-width: 600px;
+    color:hotpink;
+}
+
+.final-message h1, 
+.final-message h3 {
+    margin: 10px 0;
+}
+/* Page 1 Background */
+.page-1 {
+    background: url('assets/cloud_nine.jpg') no-repeat center center/cover;
+}
+
+/* Page 2 Background */
+.page-2 {
+    background: url('assets/lalaland.jpg') no-repeat center center/cover;
+}
+
+/* Page 3 Background */
+.page-3 {
+    background: url('assets/bow.jpg') no-repeat center center/cover;
+}
+
+/* Common Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
